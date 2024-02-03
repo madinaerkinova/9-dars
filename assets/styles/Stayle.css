@@ -1,0 +1,312 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../Fonts/Regular.eot");
+  src: url("../Fonts/Regular.eot?#iefix") format("embedded-opentype"), url("../Fonts/Regular.woff2") format("woff2"), url("../Fonts/Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../Fonts/Medium.eot");
+  src: url("../Fonts/Medium.eot?#iefix") format("embedded-opentype"), url("../Fonts/Medium.woff2") format("woff2"), url("../Fonts/Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+  font-style: normal;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (max-width: 375px) {
+  .header-top {
+    display: none;
+  }
+  .header-bot .header-title {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .header-bot .header-title :first-child {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-bot .header-title :first-child .xamburger {
+    display: block;
+  }
+  .header-bot .header-title .header-language {
+    display: none;
+  }
+  .header-bot .header-img :first-child {
+    display: none;
+  }
+  .header-bot .header-img .main-img {
+    width: 316px;
+    height: 478px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  .sectionAbout {
+    width: 80% !important;
+    padding: 30px 0 20px 0 !important;
+  }
+  .sectionSkills-content {
+    flex-direction: column;
+  }
+  .sectionPort-body img {
+    width: 316px;
+    height: 171px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .sectionPort-body {
+    padding-bottom: 29px;
+  }
+  .footer-links {
+    gap: 40px !important;
+  }
+  .footer button {
+    width: 100%;
+  }
+  .sectionSkills-title h3 {
+    margin-bottom: 40px !important;
+  }
+  .sectionSkills-item {
+    padding-bottom: 60px;
+  }
+  .sectionSkills {
+    padding: 91px 0 0px 0 !important;
+  }
+  .sectionPort {
+    padding-top: 57px !important;
+  }
+}
+header .header-top {
+  padding: 32px 0;
+  border-bottom: 1px solid grey;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul li a {
+  color: #828282;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 12px 15px;
+}
+header ul li a:hover {
+  color: #070707;
+  font-weight: 800;
+}
+header ul li a:first-of-type {
+  padding-left: 0;
+}
+header ul li a:last-of-type {
+  padding-right: 0;
+}
+header .header-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 40px 0 30px 0;
+}
+header .header-title h1 {
+  color: #070707;
+  font-size: 47.339px;
+  font-weight: 400;
+  line-height: normal;
+}
+header .header-title p {
+  color: #070707;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+header .header-title .header-language {
+  margin-bottom: 26px;
+  transform: rotate(270deg);
+}
+header .header-title span {
+  color: #828282;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+header .header-title .en-lang {
+  color: #000;
+  font-weight: 800;
+}
+header .header-img {
+  padding-bottom: 104px;
+}
+header .header-img img {
+  width: 100%;
+}
+
+.xamburger {
+  display: none;
+}
+
+.main-img {
+  display: none;
+}
+
+.wrapper-1 {
+  background-color: #F6F6F6;
+}
+.wrapper-1 .sectionAbout {
+  padding: 181px 0 107px 0;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+}
+.wrapper-1 .sectionAbout .sectionAbout-title {
+  color: #070707;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 17px;
+}
+.wrapper-1 .sectionAbout p {
+  margin-bottom: 40px;
+  color: #070707;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sectionSkills {
+  padding: 91px 0 110px 0;
+}
+.sectionSkills .sectionSkills-title {
+  margin-bottom: 83px;
+  text-align: center;
+}
+.sectionSkills .sectionSkills-title h3 {
+  color: #070707;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 70px;
+}
+.sectionSkills .sectionSkills-title p {
+  color: #070707;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.sectionSkills .sectionSkills-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sectionSkills .sectionSkills-content .sectionSkills-item {
+  text-align: center;
+}
+.sectionSkills .sectionSkills-content .sectionSkills-item .card-img {
+  margin-bottom: 24px;
+}
+.sectionSkills .sectionSkills-content .sectionSkills-item p {
+  color: #828282;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 42px;
+}
+
+.sectionPort {
+  padding-top: 112px;
+  text-align: center;
+}
+.sectionPort h1 {
+  color: #070707;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 47px;
+}
+.sectionPort .sectionPort-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
+  padding-bottom: 99px;
+}
+.sectionPort .sectionPort-body a {
+  padding: 10px 15px;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+  color: #070707;
+}
+
+.footer {
+  text-align: center;
+  padding: 114px 0 123px 0;
+}
+.footer h4 {
+  color: #070707;
+  font-weight: 800;
+  line-height: normal;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+.footer p {
+  color: #070707;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.footer button {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 86px;
+  background-color: #000;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 60px;
+}
+.footer .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 45px;
+}
+.footer span {
+  color: #828282;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=Stayle.css.map */

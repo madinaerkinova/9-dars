@@ -1,0 +1,225 @@
+header {
+    .header-top {
+        padding: 32px 0;
+        border-bottom: 1px solid grey;
+    }
+    ul {
+        @include dFlex;
+
+        li a {
+            color: #828282;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+            padding: 12px 15px;
+        }
+
+        li a:hover {
+            color: #070707; // !!!!!! $primaryColor //
+            font-weight: 800;
+        }
+
+        li a:first-of-type {
+            padding-left: 0;
+        }
+
+        li a:last-of-type {
+            padding-right: 0;
+        }
+    }
+
+    .header-title {
+        @include dFlex(space-between, flex-end);
+        padding: 40px 0 30px 0;
+
+        h1 {
+            color: #070707; // $primaryColor //
+            font-size: 47.339px;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        p {
+            color: #070707; // $primaryColor
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .header-language {
+            margin-bottom: 26px;
+            transform: rotate(270deg);
+        }
+
+        span {
+            color: #828282; //$SecondaryColor //
+            font-size: 16px;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .en-lang {
+            color: #000;
+            font-weight: 800;
+        }
+    }
+
+    .header-img {
+        padding-bottom: 104px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+.xamburger{
+    display: none;
+}
+.main-img{
+    display: none;
+}
+.wrapper-1 {
+    background-color: $backgroundColor;
+
+    .sectionAbout {
+        padding: 181px 0 107px 0;
+        width: 40%;
+        text-align: center;
+        margin: 0 auto;
+
+        .sectionAbout-title {
+            color: $primaryColor;
+            font-size: 34px;
+            font-weight: 800;
+            line-height: normal;
+            margin-bottom: 17px;
+        }
+
+        p {
+            margin-bottom: 40px;
+            color: $primaryColor;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+
+.sectionSkills {
+    padding: 91px 0 110px 0;
+
+    .sectionSkills-title {
+        margin-bottom: 83px;
+        text-align: center;
+
+        h3 {
+            color: $primaryColor;
+            font-size: 34px;
+            font-weight: 800;
+            line-height: normal;
+            margin-bottom: 70px;
+        }
+
+        p {
+            color: $primaryColor;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    .sectionSkills-content {
+        @include dFlex;
+
+        .sectionSkills-item {
+            text-align: center;
+
+            .card-img {
+                margin-bottom: 24px;
+            }
+
+            p {
+                color: $secondaryColor;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 42px;
+            }
+        }
+    }
+}
+
+.sectionPort {
+    padding-top: 112px;
+    text-align: center;
+
+    h1 {
+        color: $primaryColor;
+        font-size: 34px;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 47px;
+    }
+
+   .sectionPort-body {
+    @include dFlex;
+    flex-direction: column;
+    gap: 45px;
+    padding-bottom: 99px;
+
+     a {
+        padding: 10px 15px;
+        text-decoration: underline;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: normal;
+        color: $primaryColor;
+     }
+   }
+}
+
+.footer {
+    text-align: center;
+    padding: 114px 0 123px 0;
+
+    h4 {
+        color: $primaryColor;
+        font-weight: 800;
+        line-height: normal;
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: $primaryColor;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 30px;
+    }
+
+    button {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 86px;
+        background-color: #000;
+        padding: 12px 28px;
+        border: none;
+        border-radius: 60px;
+    }
+
+    .footer-links {
+        @include dFlex(center);
+        gap: 60px;
+        margin-bottom: 45px;
+    }
+
+    span {
+        color: $secondaryColor;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

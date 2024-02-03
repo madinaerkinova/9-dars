@@ -1,0 +1,79 @@
+@media (max-width:375px){
+    .header-top{
+        display: none;
+    }
+
+    .header-bot{
+
+        .header-title{
+            flex-direction: column;
+            align-items: normal;
+            :first-child{
+                display: flex;
+                justify-content: space-between;
+                .xamburger{
+                display: block;
+            
+                }
+            }
+
+            .header-language{
+                display: none;
+            }
+
+        }
+        .header-img{
+            :first-child{
+                display: none;
+            }
+            .main-img{
+                width: 316px;
+                height: 478px;
+                object-fit: cover;
+                display: block;
+            }
+
+        }
+
+    }
+    .sectionAbout{
+        width: 80% !important;
+        padding: 30px 0 20px 0 !important;
+       
+    }
+    .sectionSkills-content{
+        flex-direction: column;
+       }
+    .sectionPort-body{
+        img{
+            width: 316px;
+            height: 171px;
+            object-fit: cover;
+        }
+    }
+    .sectionPort-body{
+        padding-bottom: 29px;
+    }
+
+    .footer-links{
+        gap: 40px !important;
+    }
+
+    .footer{
+        button{
+            width: 100%;
+        }
+    }
+    .sectionSkills-title h3{
+        margin-bottom: 40px !important;  
+    }
+    .sectionSkills-item {
+        padding-bottom: 60px 
+    }
+    .sectionSkills {
+        padding: 91px 0 0px 0 !important;
+    }
+    .sectionPort{
+        padding-top: 57px !important;
+    }
+}

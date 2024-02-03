@@ -1,0 +1,11 @@
+@import "./fonts";
+@import "./normalize";
+@import "./media";
+@import "./mixin";
+@import "./header";
+
+
+
+html {
+    scroll-behavior: smooth;
+}
